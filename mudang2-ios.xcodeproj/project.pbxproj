@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071E799729504060009A1ED0 /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071E799629504060009A1ED0 /* Frame.swift */; };
+		071E799929504227009A1ED0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071E799829504227009A1ED0 /* Colors.swift */; };
+		071E799B295295B7009A1ED0 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071E799A295295B7009A1ED0 /* WeatherAPI.swift */; };
+		071E799F29529C1E009A1ED0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 071E799E29529C1E009A1ED0 /* Alamofire */; };
 		07A9A0F22950329C00422D72 /* mudang2_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9A0F12950329C00422D72 /* mudang2_iosApp.swift */; };
 		07A9A0F42950329C00422D72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9A0F32950329C00422D72 /* ContentView.swift */; };
 		07A9A0F62950329E00422D72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A9A0F52950329E00422D72 /* Assets.xcassets */; };
@@ -14,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		071E799629504060009A1ED0 /* Frame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Frame.swift; sourceTree = "<group>"; };
+		071E799829504227009A1ED0 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		071E799A295295B7009A1ED0 /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
+		071E79A22952AA8A009A1ED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		07A9A0EE2950329C00422D72 /* mudang2-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mudang2-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A9A0F12950329C00422D72 /* mudang2_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mudang2_iosApp.swift; sourceTree = "<group>"; };
 		07A9A0F32950329C00422D72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,12 +34,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				071E799F29529C1E009A1ED0 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		071E799C295297C5009A1ED0 /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				07A9A0F32950329C00422D72 /* ContentView.swift */,
+				071E799629504060009A1ED0 /* Frame.swift */,
+				071E799829504227009A1ED0 /* Colors.swift */,
+			);
+			path = layout;
+			sourceTree = "<group>";
+		};
 		07A9A0E52950329C00422D72 = {
 			isa = PBXGroup;
 			children = (
@@ -51,9 +70,11 @@
 		07A9A0F02950329C00422D72 /* mudang2-ios */ = {
 			isa = PBXGroup;
 			children = (
-				07A9A0F12950329C00422D72 /* mudang2_iosApp.swift */,
-				07A9A0F32950329C00422D72 /* ContentView.swift */,
+				071E79A22952AA8A009A1ED0 /* Info.plist */,
 				07A9A0F52950329E00422D72 /* Assets.xcassets */,
+				07A9A0F12950329C00422D72 /* mudang2_iosApp.swift */,
+				071E799C295297C5009A1ED0 /* layout */,
+				071E799A295295B7009A1ED0 /* WeatherAPI.swift */,
 				07A9A0F72950329E00422D72 /* Preview Content */,
 			);
 			path = "mudang2-ios";
@@ -83,6 +104,9 @@
 			dependencies = (
 			);
 			name = "mudang2-ios";
+			packageProductDependencies = (
+				071E799E29529C1E009A1ED0 /* Alamofire */,
+			);
 			productName = "mudang2-ios";
 			productReference = 07A9A0EE2950329C00422D72 /* mudang2-ios.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +135,9 @@
 				Base,
 			);
 			mainGroup = 07A9A0E52950329C00422D72;
+			packageReferences = (
+				071E799D29529C1E009A1ED0 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 07A9A0EF2950329C00422D72 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,6 +164,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				071E799729504060009A1ED0 /* Frame.swift in Sources */,
+				071E799929504227009A1ED0 /* Colors.swift in Sources */,
+				071E799B295295B7009A1ED0 /* WeatherAPI.swift in Sources */,
 				07A9A0F42950329C00422D72 /* ContentView.swift in Sources */,
 				07A9A0F22950329C00422D72 /* mudang2_iosApp.swift in Sources */,
 			);
@@ -269,7 +299,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"mudang2-ios/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "mudang2-ios/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -297,7 +328,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"mudang2-ios/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_FILE = "mudang2-ios/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -337,6 +369,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		071E799D29529C1E009A1ED0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		071E799E29529C1E009A1ED0 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 071E799D29529C1E009A1ED0 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 07A9A0E62950329C00422D72 /* Project object */;
 }
