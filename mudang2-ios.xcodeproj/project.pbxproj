@@ -11,6 +11,7 @@
 		071E799929504227009A1ED0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071E799829504227009A1ED0 /* Colors.swift */; };
 		071E799B295295B7009A1ED0 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071E799A295295B7009A1ED0 /* WeatherAPI.swift */; };
 		071E799F29529C1E009A1ED0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 071E799E29529C1E009A1ED0 /* Alamofire */; };
+		071E79A429540DC8009A1ED0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071E79A329540DC8009A1ED0 /* Weather.swift */; };
 		07A9A0F22950329C00422D72 /* mudang2_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9A0F12950329C00422D72 /* mudang2_iosApp.swift */; };
 		07A9A0F42950329C00422D72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9A0F32950329C00422D72 /* ContentView.swift */; };
 		07A9A0F62950329E00422D72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A9A0F52950329E00422D72 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		071E799829504227009A1ED0 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		071E799A295295B7009A1ED0 /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
 		071E79A22952AA8A009A1ED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		071E79A329540DC8009A1ED0 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		07A9A0EE2950329C00422D72 /* mudang2-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mudang2-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A9A0F12950329C00422D72 /* mudang2_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mudang2_iosApp.swift; sourceTree = "<group>"; };
 		07A9A0F32950329C00422D72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,7 +47,6 @@
 			isa = PBXGroup;
 			children = (
 				07A9A0F32950329C00422D72 /* ContentView.swift */,
-				071E799629504060009A1ED0 /* Frame.swift */,
 				071E799829504227009A1ED0 /* Colors.swift */,
 			);
 			path = layout;
@@ -73,9 +74,11 @@
 				071E79A22952AA8A009A1ED0 /* Info.plist */,
 				07A9A0F52950329E00422D72 /* Assets.xcassets */,
 				07A9A0F12950329C00422D72 /* mudang2_iosApp.swift */,
+				071E799629504060009A1ED0 /* Frame.swift */,
 				071E799C295297C5009A1ED0 /* layout */,
 				071E799A295295B7009A1ED0 /* WeatherAPI.swift */,
 				07A9A0F72950329E00422D72 /* Preview Content */,
+				071E79A329540DC8009A1ED0 /* Weather.swift */,
 			);
 			path = "mudang2-ios";
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				071E799929504227009A1ED0 /* Colors.swift in Sources */,
 				071E799B295295B7009A1ED0 /* WeatherAPI.swift in Sources */,
 				07A9A0F42950329C00422D72 /* ContentView.swift in Sources */,
+				071E79A429540DC8009A1ED0 /* Weather.swift in Sources */,
 				07A9A0F22950329C00422D72 /* mudang2_iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

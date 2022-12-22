@@ -6,11 +6,16 @@
 //
 
 import SwiftUI
+import Alamofire
 
 struct ContentView: View {
     let smallTextSize : CGFloat = 14
     let bigTextSize : CGFloat = 25
-    let weatherAPI : WeatherAPI = WeatherAPI(apiKey: ApiKey())
+    let weather = Weather()
+    
+    @State var tmp : String = ""
+    @State var sky : String = ""
+    @State var pty : String = ""
     
     var body: some View {
         VStack {
@@ -66,10 +71,10 @@ struct ContentView: View {
                         .frame(maxWidth: .infinity,alignment: .leading)
                         .padding(.leading,10)
                     
-                    Image("sun")
+                    Image(skyImage(sky,pty))
                         .resizable()
                         .frame(width:70,height:70)
-                    Text("\(20)℃")
+                    Text("\(tmp)℃")
                         .font(.system(size: smallTextSize))
                 }.frame(width:Screen.width*0.44, height: Screen.height*0.16)
                     .background(.white)
@@ -82,13 +87,38 @@ struct ContentView: View {
         .frame(maxWidth: .infinity,maxHeight: .infinity)
         .background(Colors.blueBackgoundColor)
         .task {
-            weatherAPI.getWeather()
+            weather.setHourDate()
+            weather.weatherStatus(dataType: "JSON", numOfRows: 36, pageNo: 1, baseData: weather.todayDate!, baseTime: weather.baseTime!, nx: 62, ny: 124){ tmp,sky,pty in
+                print("\(tmp)\n\(sky)\n\(pty)")
+                self.tmp = tmp
+                self.sky = sky
+                self.pty = pty
+            }
+            
         }
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    private func skyImage(_ sky:String,_ pty:String) -> String {
+        var img = ""
+        
+        switch sky {
+        case "1" :
+            img = "sun"
+        case "3","4":
+            img = "cloud"
+        default:
+            img = "sun"
+        }
+        
+        switch pty {
+        case "0" :
+            break
+        case "3":
+            img = "snow"
+        default:
+            img = "rain"
+        }
+        
+        return img
     }
 }
