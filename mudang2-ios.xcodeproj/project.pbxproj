@@ -10,12 +10,17 @@
 		071E799729504060009A1ED0 /* Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071E799629504060009A1ED0 /* Frame.swift */; };
 		071E799929504227009A1ED0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071E799829504227009A1ED0 /* Colors.swift */; };
 		071E799B295295B7009A1ED0 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071E799A295295B7009A1ED0 /* WeatherAPI.swift */; };
-		071E799F29529C1E009A1ED0 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 071E799E29529C1E009A1ED0 /* Alamofire */; };
 		071E79A429540DC8009A1ED0 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071E79A329540DC8009A1ED0 /* Weather.swift */; };
+		07922771296E7E0E005BCEAB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07922770296E7E0E005BCEAB /* MapViewController.swift */; };
+		07922775296FD78E005BCEAB /* GpsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07922774296FD78E005BCEAB /* GpsAPI.swift */; };
+		0792277B296FDAB2005BCEAB /* Gps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0792277A296FDAB2005BCEAB /* Gps.swift */; };
+		0792277D296FE8F9005BCEAB /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0792277C296FE8F9005BCEAB /* Bus.swift */; };
+		07922780296FEE17005BCEAB /* CameraAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0792277F296FEE17005BCEAB /* CameraAPI.swift */; };
+		07922782296FEEE4005BCEAB /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07922781296FEEE4005BCEAB /* Camera.swift */; };
+		0792278829710A68005BCEAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0792278729710A68005BCEAB /* Assets.xcassets */; };
 		07A9A0F22950329C00422D72 /* mudang2_iosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9A0F12950329C00422D72 /* mudang2_iosApp.swift */; };
 		07A9A0F42950329C00422D72 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9A0F32950329C00422D72 /* ContentView.swift */; };
-		07A9A0F62950329E00422D72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A9A0F52950329E00422D72 /* Assets.xcassets */; };
-		07A9A0F92950329E00422D72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07A9A0F82950329E00422D72 /* Preview Assets.xcassets */; };
+		A2622FAA2DFBBD51CFCC4C5A /* Pods_mudang2_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798D387BF58F259DF7B0A036 /* Pods_mudang2_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,11 +29,21 @@
 		071E799A295295B7009A1ED0 /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
 		071E79A22952AA8A009A1ED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		071E79A329540DC8009A1ED0 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		07922770296E7E0E005BCEAB /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		07922772296E80FC005BCEAB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		07922774296FD78E005BCEAB /* GpsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpsAPI.swift; sourceTree = "<group>"; };
+		0792277A296FDAB2005BCEAB /* Gps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gps.swift; sourceTree = "<group>"; };
+		0792277C296FE8F9005BCEAB /* Bus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
+		0792277F296FEE17005BCEAB /* CameraAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAPI.swift; sourceTree = "<group>"; };
+		07922781296FEEE4005BCEAB /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		0792278729710A68005BCEAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07A9A0EE2950329C00422D72 /* mudang2-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mudang2-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07A9A0F12950329C00422D72 /* mudang2_iosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mudang2_iosApp.swift; sourceTree = "<group>"; };
 		07A9A0F32950329C00422D72 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		07A9A0F52950329E00422D72 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07A9A0F82950329E00422D72 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3381A292EF3F8C1C5FC1F772 /* Pods-mudang2-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mudang2-ios.debug.xcconfig"; path = "Target Support Files/Pods-mudang2-ios/Pods-mudang2-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		798D387BF58F259DF7B0A036 /* Pods_mudang2_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mudang2_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ACF325705C7CC947457AF90 /* Pods-mudang2-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mudang2-ios.release.xcconfig"; path = "Target Support Files/Pods-mudang2-ios/Pods-mudang2-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,7 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				071E799F29529C1E009A1ED0 /* Alamofire in Frameworks */,
+				A2622FAA2DFBBD51CFCC4C5A /* Pods_mudang2_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,11 +67,43 @@
 			path = layout;
 			sourceTree = "<group>";
 		};
+		07922778296FDA7B005BCEAB /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				071E79A329540DC8009A1ED0 /* Weather.swift */,
+				071E799A295295B7009A1ED0 /* WeatherAPI.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		07922779296FDA9F005BCEAB /* Gps */ = {
+			isa = PBXGroup;
+			children = (
+				07922774296FD78E005BCEAB /* GpsAPI.swift */,
+				0792277A296FDAB2005BCEAB /* Gps.swift */,
+				0792277C296FE8F9005BCEAB /* Bus.swift */,
+			);
+			path = Gps;
+			sourceTree = "<group>";
+		};
+		0792277E296FEE04005BCEAB /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				0792277F296FEE17005BCEAB /* CameraAPI.swift */,
+				07922781296FEEE4005BCEAB /* Camera.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
 		07A9A0E52950329C00422D72 = {
 			isa = PBXGroup;
 			children = (
+				0792278729710A68005BCEAB /* Assets.xcassets */,
+				07922772296E80FC005BCEAB /* Podfile */,
 				07A9A0F02950329C00422D72 /* mudang2-ios */,
 				07A9A0EF2950329C00422D72 /* Products */,
+				CD7015D7C80C105BDAC15F81 /* Pods */,
+				A70B024FBD28A0A00ACAD34B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,13 +119,14 @@
 			isa = PBXGroup;
 			children = (
 				071E79A22952AA8A009A1ED0 /* Info.plist */,
-				07A9A0F52950329E00422D72 /* Assets.xcassets */,
 				07A9A0F12950329C00422D72 /* mudang2_iosApp.swift */,
 				071E799629504060009A1ED0 /* Frame.swift */,
+				07922770296E7E0E005BCEAB /* MapViewController.swift */,
+				07922778296FDA7B005BCEAB /* Weather */,
+				07922779296FDA9F005BCEAB /* Gps */,
+				0792277E296FEE04005BCEAB /* Camera */,
 				071E799C295297C5009A1ED0 /* layout */,
-				071E799A295295B7009A1ED0 /* WeatherAPI.swift */,
 				07A9A0F72950329E00422D72 /* Preview Content */,
-				071E79A329540DC8009A1ED0 /* Weather.swift */,
 			);
 			path = "mudang2-ios";
 			sourceTree = "<group>";
@@ -91,6 +139,23 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A70B024FBD28A0A00ACAD34B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				798D387BF58F259DF7B0A036 /* Pods_mudang2_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD7015D7C80C105BDAC15F81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3381A292EF3F8C1C5FC1F772 /* Pods-mudang2-ios.debug.xcconfig */,
+				7ACF325705C7CC947457AF90 /* Pods-mudang2-ios.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -98,18 +163,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07A9A0FC2950329E00422D72 /* Build configuration list for PBXNativeTarget "mudang2-ios" */;
 			buildPhases = (
+				9C18122352047A0779EC7898 /* [CP] Check Pods Manifest.lock */,
 				07A9A0EA2950329C00422D72 /* Sources */,
 				07A9A0EB2950329C00422D72 /* Frameworks */,
 				07A9A0EC2950329C00422D72 /* Resources */,
+				3F4D891A5056ACDA66C09E64 /* [CP] Copy Pods Resources */,
+				E353325F146C601DA17747D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "mudang2-ios";
-			packageProductDependencies = (
-				071E799E29529C1E009A1ED0 /* Alamofire */,
-			);
 			productName = "mudang2-ios";
 			productReference = 07A9A0EE2950329C00422D72 /* mudang2-ios.app */;
 			productType = "com.apple.product-type.application";
@@ -138,9 +203,6 @@
 				Base,
 			);
 			mainGroup = 07A9A0E52950329C00422D72;
-			packageReferences = (
-				071E799D29529C1E009A1ED0 /* XCRemoteSwiftPackageReference "Alamofire" */,
-			);
 			productRefGroup = 07A9A0EF2950329C00422D72 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -155,23 +217,87 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07A9A0F92950329E00422D72 /* Preview Assets.xcassets in Resources */,
-				07A9A0F62950329E00422D72 /* Assets.xcassets in Resources */,
+				0792278829710A68005BCEAB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F4D891A5056ACDA66C09E64 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mudang2-ios/Pods-mudang2-ios-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mudang2-ios/Pods-mudang2-ios-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mudang2-ios/Pods-mudang2-ios-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C18122352047A0779EC7898 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-mudang2-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E353325F146C601DA17747D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mudang2-ios/Pods-mudang2-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-mudang2-ios/Pods-mudang2-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-mudang2-ios/Pods-mudang2-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		07A9A0EA2950329C00422D72 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0792277D296FE8F9005BCEAB /* Bus.swift in Sources */,
 				071E799729504060009A1ED0 /* Frame.swift in Sources */,
 				071E799929504227009A1ED0 /* Colors.swift in Sources */,
 				071E799B295295B7009A1ED0 /* WeatherAPI.swift in Sources */,
+				07922775296FD78E005BCEAB /* GpsAPI.swift in Sources */,
+				07922780296FEE17005BCEAB /* CameraAPI.swift in Sources */,
+				07922771296E7E0E005BCEAB /* MapViewController.swift in Sources */,
 				07A9A0F42950329C00422D72 /* ContentView.swift in Sources */,
 				071E79A429540DC8009A1ED0 /* Weather.swift in Sources */,
+				07922782296FEEE4005BCEAB /* Camera.swift in Sources */,
+				0792277B296FDAB2005BCEAB /* Gps.swift in Sources */,
 				07A9A0F22950329C00422D72 /* mudang2_iosApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +308,7 @@
 		07A9A0FA2950329E00422D72 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -213,8 +340,12 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_ASSET_PATHS = Assets.xcassets;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = arm64;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -242,6 +373,7 @@
 		07A9A0FB2950329E00422D72 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -273,8 +405,12 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_ASSET_PATHS = Assets.xcassets;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = arm64;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -286,6 +422,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -295,13 +432,18 @@
 		};
 		07A9A0FD2950329E00422D72 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3381A292EF3F8C1C5FC1F772 /* Pods-mudang2-ios.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"mudang2-ios/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = Assets.xcassets;
+				DEVELOPMENT_TEAM = 8LD77AGR5F;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "mudang2-ios/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
@@ -324,13 +466,18 @@
 		};
 		07A9A0FE2950329E00422D72 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ACF325705C7CC947457AF90 /* Pods-mudang2-ios.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"mudang2-ios/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = Assets.xcassets;
+				DEVELOPMENT_TEAM = 8LD77AGR5F;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "mudang2-ios/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
@@ -343,6 +490,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = "hassung.mudang2-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -373,25 +521,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		071E799D29529C1E009A1ED0 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		071E799E29529C1E009A1ED0 /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 071E799D29529C1E009A1ED0 /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 07A9A0E62950329C00422D72 /* Project object */;
 }

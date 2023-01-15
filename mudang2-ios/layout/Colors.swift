@@ -11,6 +11,8 @@ struct Colors {
     static let blueBackgoundColor = Color(hex:"CFEEFF")
     static let blueTextColor = Color(hex:"004E96")
     
+    static let polylineColor = Color(hex:"004E96")
+    
     
 }
 
