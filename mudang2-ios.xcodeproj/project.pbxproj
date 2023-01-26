@@ -14,7 +14,6 @@
 		07922771296E7E0E005BCEAB /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07922770296E7E0E005BCEAB /* MapViewController.swift */; };
 		07922775296FD78E005BCEAB /* GpsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07922774296FD78E005BCEAB /* GpsAPI.swift */; };
 		0792277B296FDAB2005BCEAB /* Gps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0792277A296FDAB2005BCEAB /* Gps.swift */; };
-		0792277D296FE8F9005BCEAB /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0792277C296FE8F9005BCEAB /* Bus.swift */; };
 		07922780296FEE17005BCEAB /* CameraAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0792277F296FEE17005BCEAB /* CameraAPI.swift */; };
 		07922782296FEEE4005BCEAB /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07922781296FEEE4005BCEAB /* Camera.swift */; };
 		0792278829710A68005BCEAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0792278729710A68005BCEAB /* Assets.xcassets */; };
@@ -33,7 +32,6 @@
 		07922772296E80FC005BCEAB /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		07922774296FD78E005BCEAB /* GpsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GpsAPI.swift; sourceTree = "<group>"; };
 		0792277A296FDAB2005BCEAB /* Gps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gps.swift; sourceTree = "<group>"; };
-		0792277C296FE8F9005BCEAB /* Bus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
 		0792277F296FEE17005BCEAB /* CameraAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraAPI.swift; sourceTree = "<group>"; };
 		07922781296FEEE4005BCEAB /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		0792278729710A68005BCEAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,7 +79,6 @@
 			children = (
 				07922774296FD78E005BCEAB /* GpsAPI.swift */,
 				0792277A296FDAB2005BCEAB /* Gps.swift */,
-				0792277C296FE8F9005BCEAB /* Bus.swift */,
 			);
 			path = Gps;
 			sourceTree = "<group>";
@@ -287,7 +284,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0792277D296FE8F9005BCEAB /* Bus.swift in Sources */,
 				071E799729504060009A1ED0 /* Frame.swift in Sources */,
 				071E799929504227009A1ED0 /* Colors.swift in Sources */,
 				071E799B295295B7009A1ED0 /* WeatherAPI.swift in Sources */,

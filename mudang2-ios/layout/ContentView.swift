@@ -18,10 +18,9 @@ struct ContentView: View {
     @State var tmp : String = ""
     @State var sky : String = ""
     @State var pty : String = ""
-    
-    @State var busIdx : Int = 0
-    @State var lat : String = ""
-    @State var lon : String = ""
+
+    @State var busList : [Bus] = []
+    @State var mapView = MapView()
     
     @State var headCount : String = ""
     
@@ -48,11 +47,8 @@ struct ContentView: View {
             }.frame(maxWidth:.infinity)
                 .padding([.leading,.trailing],Screen.width*0.05)
                 
-            
-            
-            MapView()
+            mapView
                 .frame(width:Screen.width*0.93,height: Screen.height*0.60)
-            
             
             
             HStack{
@@ -178,22 +174,13 @@ struct ContentView: View {
     }
     
     private func getGPS(){
-        
-        for idx in 1...6 {
-            gps.gpsStatus(busIdx: idx) { busIdx, lat, lon in
-                self.busIdx = busIdx
-                self.lat = lat
-                self.lon = lon
-            }
+        gps.gpsStatus(){busList  in
+            mapView.viewUpdate(busList: busList)
         }
         
         Timer.scheduledTimer(withTimeInterval: 5, repeats: true, block: { timer in
-            for idx in 1...6 {
-                gps.gpsStatus(busIdx: idx) { busIdx, lat, lon in
-                    self.busIdx = busIdx
-                    self.lat = lat
-                    self.lon = lon
-                }
+            gps.gpsStatus(){busList  in
+                mapView.viewUpdate(busList: busList)
             }
         })
     }

@@ -9,8 +9,8 @@ import Foundation
 import Alamofire
 
 struct GpsAPI {
-    func getGPS(idx:Int,completion:@escaping(GpsResponse)->Void){
-        AF.request("http://210.102.178.97/gps/location/\(idx)",
+    func getGPS(completion:@escaping(GpsResponse)->Void){
+        AF.request("http://210.102.178.97/gps/location",
                    method: .get,
                    encoding: JSONEncoding.default,
                    headers: ["Content-Type":"application/json", "Accept":"application/json"])
@@ -42,12 +42,23 @@ struct GpsResponse : Codable {
     let isSuccess : Bool
     let code : Int
     let message : String
-    let result : GpsResult?
+    let result : [Bus]
 }
 
-struct GpsResult : Codable {
+struct Bus : Codable {
     let busIdx : Int
-    let lat : String
-    let lon : String
+    let lat : String?
+    let lon : String?
 }
 
+class BusListViewModel: ObservableObject {
+    @Published var busList : [Bus] = []
+    
+    func addList(bus:Bus) {
+        busList.append(bus)
+    }
+    
+    func refresh(){
+        busList = []
+    }
+}

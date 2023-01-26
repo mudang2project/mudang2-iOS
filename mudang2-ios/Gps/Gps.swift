@@ -11,23 +11,14 @@ import Alamofire
 
 class Gps {
     let gpsAPI : GpsAPI = GpsAPI()
-    
-    var busIdx : Int = 0
-    var lat : String = ""
-    var lon : String = ""
 
     func gpsStatus(
-        busIdx:Int,
-        completion:@escaping(Int,String,String)->Void){
+        completion:@escaping([Bus])->Void){
 
-            gpsAPI.getGPS(idx: busIdx){ response in
-            let busIdx =
-                response.result!.busIdx
-            let lat =
-            response.result!.lat
-            let lon =
-            response.result!.lon
-            completion(busIdx,lat,lon)
+            gpsAPI.getGPS(){ response in
+            let busList =
+                response.result
+            completion(busList)
         }
     }
 }
